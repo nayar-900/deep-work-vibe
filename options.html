@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { background-color: #121212; color: #fff; font-family: sans-serif; padding: 40px; max-width: 500px; margin: 0 auto; }
+        h1 { color: #BB86FC; }
+        input { padding: 10px; width: 70%; border-radius: 5px; border: none; margin-right: 10px; }
+        button { background-color: #BB86FC; color: #121212; border: none; padding: 10px 20px; font-weight: bold; border-radius: 5px; cursor: pointer; }
+        ul { list-style-type: none; padding: 0; margin-top: 20px; }
+        li { background: #1e1e1e; padding: 10px; margin-bottom: 5px; display: flex; justify-content: space-between; border-radius: 5px; }
+        .remove-btn { background-color: #CF6679; padding: 5px 10px; }
+    </style>
+</head>
+<body>
+    <h1>Settings: Distraction Blocklist</h1>
+    <p>Add the domains you want to block during your Deep Work sessions (e.g., netflix.com).</p>
+    
+    <div>
+        <input type="text" id="siteInput" placeholder="Enter website (e.g. twitter.com)">
+        <button id="addBtn">Add</button>
+    </div>
+
+    <ul id="siteList"></ul>
+
+    <script src="options.js"></script>
+</body>
+</html>

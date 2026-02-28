@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Deep Work Vibe",
+  "version": "1.0",
+  "description": "A Pomodoro tracker that blocks distractions.",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "128": "icon.jpg"
+  }
+}
